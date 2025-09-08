@@ -1,0 +1,10 @@
+site_name: Serverless Uptime Monitor
+site_url: https://t97run.github.io/cloud-uptime-monitor/
+repo_url: https://github.com/t97run/cloud-uptime-monitor
+repo_name: cloud-uptime-monitor
+nav:
+- Home: index.md
+- Architecture: architecture.md
+- Setup: setup.md
+theme:
+name: material

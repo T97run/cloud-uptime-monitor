@@ -15,6 +15,11 @@ variable "project_name" {
 variable "urls" {
   type        = list(string)
   description = "List of URLs to check"
+  default = [
+"https://example.com",
+"https://httpbin.org/get",
+"https://google.com"
+]
 }
 
 

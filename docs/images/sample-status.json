@@ -1,0 +1,1 @@
+{"timestamp": 1757325996, "results": [{"url": "https://example.com", "ok": true, "ms": 541, "error": null}, {"url": "https://httpbin.org/get", "ok": true, "ms": 1692, "error": null}, {"url": "https://google.com", "ok": true, "ms": 573, "error": null}]}

@@ -1,10 +1,14 @@
 site_name: Serverless Uptime Monitor
-site_url: https://t97run.github.io/cloud-uptime-monitor/
-repo_url: https://github.com/t97run/cloud-uptime-monitor
+site_url: https://T97run.github.io/cloud-uptime-monitor/
+repo_url: https://github.com/T97run/cloud-uptime-monitor
 repo_name: cloud-uptime-monitor
 nav:
-- Home: index.md
-- Architecture: architecture.md
-- Setup: setup.md
+ - Home: index.md
+ - Architecture: architecture.md
+ - Setup: setup.md
 theme:
-name: material
+  name: material
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - js/mermaid-init.js

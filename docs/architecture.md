@@ -1,10 +1,10 @@
 # Architecture & Rationale
 
-
-```mermaid
+<div class="mermaid">
 graph TD
-EB[EventBridge schedule] --> L1[Lambda: pinger]
-L1 -->|Put status.json| S3[(S3 bucket)]
-API[HTTP API] --> L2[Lambda: reader]
-L2 -->|Get status.json| S3
-GH[GitHub Pages (MkDocs)] -->|fetch /status| API
+  EB["EventBridge (schedule)"] --> P["Lambda: pinger"]
+  P -->|"Put status.json"| S3["S3 bucket"]
+  API["API Gateway (HTTP API v2)"] --> R["Lambda: reader"]
+  R -->|"Get status.json"| S3
+  GH["MkDocs (GitHub Pages)"] -->|"GET /status"| API
+</div>

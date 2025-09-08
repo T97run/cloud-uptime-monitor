@@ -16,7 +16,7 @@
 ![AWS Lambda](images/lambda-functions.png)
 
 **API Gateway route**
-![API Gateway](images/apigw-status-route.png)
+![API Gateway](images/api-gateway.png)
 
 **S3 status object**
 ![S3 status.json](images/s3-status-object.png)

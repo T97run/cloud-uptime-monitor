@@ -1,13 +1,26 @@
-**`docs/setup.md`** (usage notes)
-```markdown
 # Setup & Operations
 
+Follow these steps to configure, deploy, preview locally, and safely tear down the stack.
 
-- Change the target URLs via Terraform variable `urls`.
-- Adjust frequency with `schedule_expression` (e.g., `rate(15 minutes)`).
-- Tear down everything: `terraform destroy`.
-- Security: Only the reader Lambda is public; S3 bucket blocks public access.
-Preview locally:
+---
 
-```bash
-mkdocs serve  # http://127.0.0.1:8000
+## ✅ Prerequisites
+- AWS account + credentials configured (e.g., `aws configure`)
+- Terraform installed (`terraform -version`)
+- Python (for local scripts, if needed)
+- MkDocs installed (`pip install mkdocs`), and theme if you use one
+
+---
+
+## ⚙️ Configure Targets & Schedule
+
+### 1) Set your URLs
+Define the URLs you want to monitor via a Terraform variable (example below).  
+If you use a `terraform.tfvars` file:
+
+```hcl
+# terraform.tfvars
+urls = [
+  "https://example.com",
+  "https://status.example.com/health"
+]

@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#live-status" class="md-skip">
+        <a href="#live-status-archived" class="md-skip">
           Skip to content
         </a>
       
@@ -227,6 +227,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -238,6 +251,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#screenshots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Screenshots
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -307,6 +348,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#screenshots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Screenshots
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -324,10 +382,30 @@
   
 
 
-<h1 id="live-status">Live Status</h1>
-<blockquote>
-<p>The table below is fed by your AWS API. After deploy, paste your API URL where noted and this page will auto-refresh content when you reload.</p>
-</blockquote>
+<h1 id="live-status-archived">Live Status (Archived)</h1>
+<p>!!! warning "Live API turned off"
+    To avoid ongoing AWS charges, the live endpoint has been decommissioned.<br />
+    Below are screenshots captured while the system was running.</p>
+<h2 id="screenshots">Screenshots</h2>
+<p><strong>Terraform Outputs</strong>
+<img alt="Terraform Output" src="images/tf-output.png" /></p>
+<p><strong>MkDocs live status page</strong>
+<img alt="Live Status" src="images/live-status.png" /></p>
+<p><strong>Lambda functions</strong>
+<img alt="AWS Lambda" src="images/lambda-functions.png" /></p>
+<p><strong>API Gateway route</strong>
+<img alt="API Gateway" src="images/api-gateway.png" /></p>
+<p><strong>S3 status object</strong>
+<img alt="S3 status.json" src="images/s3-status-object.png" /></p>
+<p><strong>CloudWatch Logs</strong>
+<img alt="Logs" src="images/logs.png" /></p>
+<hr />
+<!--
+
+# Live Status
+
+> The table below is fed by your AWS API. After deploy, paste your API URL where noted and this page will auto-refresh content when you reload.
+
 <div id="status">Loading…</div>
 
 <script>
@@ -351,6 +429,7 @@
   }
 })();
 </script>
+-->
 
 
 
